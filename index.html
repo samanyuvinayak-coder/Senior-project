@@ -1,0 +1,1067 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Moves | Senior Project</title>
+    <meta
+      name="description"
+      content="A student-built financial literacy course for teens."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Manrope", "sans-serif"],
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            colors: {
+              ink: "#08111f",
+              slateblue: "#7dd3fc",
+              mint: "#86efac",
+              sand: "#f8f4ec",
+              coral: "#fda4af",
+            },
+            boxShadow: {
+              glow: "0 30px 80px rgba(9, 16, 30, 0.22)",
+            },
+            backgroundImage: {
+              "hero-grid":
+                "linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-ink text-white antialiased">
+    <div class="relative overflow-hidden">
+      <header class="sticky top-0 z-50 border-b border-white/10 bg-ink/75 backdrop-blur-xl">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+          <a href="#home" class="font-display text-lg font-bold tracking-tight text-white">
+            Money <span class="text-slateblue">Moves</span>
+          </a>
+          <nav class="hidden items-center gap-8 md:flex">
+            <a href="#home" class="text-sm font-medium text-slate-300 transition hover:text-white">Home</a>
+            <a href="#about" class="text-sm font-medium text-slate-300 transition hover:text-white">About</a>
+            <a href="#modules" class="text-sm font-medium text-slate-300 transition hover:text-white">Modules</a>
+            <a href="#methodology" class="text-sm font-medium text-slate-300 transition hover:text-white">Methodology</a>
+            <a href="#stock-lab" class="text-sm font-medium text-slate-300 transition hover:text-white">Stock Lab</a>
+            <a href="#reflection" class="text-sm font-medium text-slate-300 transition hover:text-white">Reflection</a>
+            <a href="#journal" class="text-sm font-medium text-slate-300 transition hover:text-white">Journal</a>
+          </nav>
+          <a
+            href="#modules"
+            class="hidden rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:border-slateblue/40 hover:bg-white/10 md:inline-flex"
+          >
+            Start the Course
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <section id="home" class="relative overflow-hidden px-4 pb-20 pt-10 sm:px-6 lg:px-8 lg:pb-28 lg:pt-16">
+          <div class="absolute inset-0 bg-hero-grid bg-[size:42px_42px] opacity-[0.08]"></div>
+          <div class="absolute left-[8%] top-16 h-48 w-48 rounded-full bg-slateblue/20 blur-3xl float-slow"></div>
+          <div class="absolute right-[10%] top-28 h-56 w-56 rounded-full bg-mint/10 blur-3xl float-delay"></div>
+
+          <div class="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+            <div class="fade-up">
+              <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200">
+                <span class="h-2 w-2 rounded-full bg-mint"></span>
+                Student-created course website
+              </div>
+
+              <h1 class="max-w-4xl font-display text-5xl font-bold leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl">
+                Financial literacy for teens, built like a <span class="text-gradient">real learning platform.</span>
+              </h1>
+
+              <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+                A student-built financial literacy course made for teens who want real-world money skills before graduation.
+              </p>
+
+              <p class="mt-5 max-w-2xl text-base leading-7 text-slate-400">
+                This senior project turns financial literacy into something practical, clear, and actually relevant to high school students. It is a mini learning platform with short course modules, video lessons, and takeaways built by a student for students.
+              </p>
+
+              <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+                <a
+                  href="#modules"
+                  class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3.5 text-sm font-bold text-ink transition hover:scale-[1.02] hover:bg-sand"
+                >
+                  Explore the Modules
+                </a>
+                <a
+                  href="#about"
+                  class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white transition hover:border-white/30 hover:bg-white/10"
+                >
+                  About the Project
+                </a>
+              </div>
+
+              <div class="mt-8 flex flex-wrap gap-4 text-sm text-slate-300">
+                <div class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                  Created by <span class="font-bold text-white">Your Name</span>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                  Senior capstone in financial literacy
+                </div>
+              </div>
+            </div>
+
+            <div class="relative fade-up">
+              <div class="glass-panel card-border relative overflow-hidden rounded-[2rem] p-6 sm:p-8">
+                <div class="mesh-bg absolute inset-0 opacity-60"></div>
+                <div class="relative">
+                  <div class="mb-8 flex items-start justify-between gap-6">
+                    <div>
+                      <p class="text-sm font-semibold uppercase tracking-[0.28em] text-slateblue">
+                        Course Snapshot
+                      </p>
+                      <h2 class="mt-3 font-display text-3xl font-bold text-white">
+                        Money Moves
+                      </h2>
+                    </div>
+                    <div class="rounded-2xl bg-white/10 p-3 text-white">
+                      <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-slateblue">â–¶</div>
+                    </div>
+                  </div>
+
+                  <div class="grid gap-4 sm:grid-cols-3">
+                    <div class="rounded-3xl border border-white/10 bg-white/5 p-5">
+                      <div class="font-display text-3xl font-bold text-white">5</div>
+                      <div class="mt-2 text-sm text-slate-300">course modules</div>
+                    </div>
+                    <div class="rounded-3xl border border-white/10 bg-white/5 p-5">
+                      <div class="font-display text-3xl font-bold text-white">Student</div>
+                      <div class="mt-2 text-sm text-slate-300">built perspective</div>
+                    </div>
+                    <div class="rounded-3xl border border-white/10 bg-white/5 p-5">
+                      <div class="font-display text-3xl font-bold text-white">Real-world</div>
+                      <div class="mt-2 text-sm text-slate-300">money decisions</div>
+                    </div>
+                  </div>
+
+                  <div class="mt-6 rounded-[1.75rem] border border-white/10 bg-[#081426] p-5">
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <p class="text-sm font-medium text-slate-400">Learning focus</p>
+                        <p class="mt-2 text-xl font-semibold text-white">
+                          Banking, credit, investing, and long-term money decisions
+                        </p>
+                      </div>
+                      <div class="hidden rounded-2xl bg-slateblue/15 px-3 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slateblue sm:block">
+                        For teens
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mt-6 grid gap-4 sm:grid-cols-2">
+                    <div class="rounded-3xl border border-white/10 bg-white/[0.04] p-5">
+                      <div class="text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">Purpose</div>
+                      <p class="mt-3 text-sm leading-7 text-slate-300">
+                        Help students understand money before they are expected to make adult financial choices on their own.
+                      </p>
+                    </div>
+                    <div class="rounded-3xl border border-white/10 bg-white/[0.04] p-5">
+                      <div class="text-sm font-semibold uppercase tracking-[0.2em] text-mint">Format</div>
+                      <p class="mt-3 text-sm leading-7 text-slate-300">
+                        Short videos, clear takeaways, modern visuals, and a course structure designed for quick understanding.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="relative px-4 py-20 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-7xl">
+            <div class="max-w-3xl">
+              <p class="mb-4 text-sm font-semibold uppercase tracking-[0.28em] text-slateblue">About The Project</p>
+              <h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                A senior capstone built around a problem students actually face
+              </h2>
+              <p class="mt-4 text-base leading-7 text-slate-300 sm:text-lg">
+                This capstone explores how schools can better prepare students for real financial decisions. Instead of waiting until adulthood to learn about money, this project introduces the basics earlier through a course designed around how teens actually learn: short videos, direct explanations, and practical examples. A lot of students graduate knowing how to solve equations but not how credit cards, savings accounts, taxes, or investing work. That gap can become expensive very quickly.
+              </p>
+            </div>
+
+            <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+              <div class="card-border glass-panel rounded-[1.75rem] p-6">
+                <div class="inline-flex rounded-2xl bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slateblue">Highlight</div>
+                <h3 class="mt-5 text-xl font-bold text-white">Built for High School Students</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-300">Clear explanations, modern visuals, and examples that connect to real student decisions.</p>
+              </div>
+              <div class="card-border glass-panel rounded-[1.75rem] p-6">
+                <div class="inline-flex rounded-2xl bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slateblue">Highlight</div>
+                <h3 class="mt-5 text-xl font-bold text-white">Real-World Money Topics</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-300">Credit, saving, investing, and long-term financial independence in one focused course.</p>
+              </div>
+              <div class="card-border glass-panel rounded-[1.75rem] p-6">
+                <div class="inline-flex rounded-2xl bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slateblue">Highlight</div>
+                <h3 class="mt-5 text-xl font-bold text-white">Video-Based Learning</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-300">Each module is designed to be easy to watch, remember, and revisit later.</p>
+              </div>
+              <div class="card-border glass-panel rounded-[1.75rem] p-6">
+                <div class="inline-flex rounded-2xl bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slateblue">Highlight</div>
+                <h3 class="mt-5 text-xl font-bold text-white">Senior Capstone Project</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-300">Research-backed and presentation-ready, with a full process behind the final product.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="modules" class="relative px-4 py-20 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-7xl">
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+              <div class="max-w-3xl">
+                <p class="mb-4 text-sm font-semibold uppercase tracking-[0.28em] text-slateblue">Course Modules</p>
+                <h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Five polished modules, built to feel like a mini course platform</h2>
+                <p class="mt-4 text-base leading-7 text-slate-300 sm:text-lg">This section is the centerpiece of the site. Each card hosts a video, a short summary, and the most important ideas students should remember.</p>
+              </div>
+            </div>
+
+            <div class="mt-12 space-y-6">
+              <article class="card-border glass-panel rounded-[2rem] p-5 sm:p-7">
+                <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+                  <div>
+                    <div class="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200"><span class="font-display text-lg font-bold text-white">01</span><span class="h-1.5 w-1.5 rounded-full bg-slateblue"></span>Module</div>
+                    <h3 class="mt-5 font-display text-3xl font-bold tracking-tight text-white">Financial Literacy Foundations</h3>
+                    <p class="mt-4 max-w-2xl text-base leading-7 text-slate-300">A strong introduction to what financial literacy actually means, why it matters, and the core money systems students will interact with first.</p>
+                    <div class="mt-6 grid gap-3">
+                      <div class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm leading-6 text-slate-200">Financial literacy is about decision-making, not just definitions.</div>
+                      <div class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm leading-6 text-slate-200">Money habits formed early usually scale into adulthood.</div>
+                      <div class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm leading-6 text-slate-200">Understanding banking, budgeting, and income creates a stronger starting point.</div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-4">
+                    <div class="overflow-hidden rounded-[1.5rem] border border-white/10 bg-black shadow-glow">
+                      <video class="aspect-video w-full bg-black" controls preload="metadata" src="./videos/0302-1.mp4"></video>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="card-border glass-panel rounded-[2rem] p-5 sm:p-7">
+                <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+                  <div>
+                    <div class="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200"><span class="font-display text-lg font-bold text-white">02</span><span class="h-1.5 w-1.5 rounded-full bg-slateblue"></span>Module</div>
+                    <h3 class="mt-5 font-display text-3xl font-bold tracking-tight text-white">Credit, Debt, and the Credit System</h3>
+                    <p class="mt-4 max-w-2xl text-base leading-7 text-slate-300">A teen-friendly breakdown of how credit works, what debt does over time, and how to avoid common traps before they start.</p>
+                    <div class="mt-6 grid gap-3">
+                      <div class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm leading-6 text-slate-200">Credit scores affect future options like loans, apartments, and rates.</div>
+                      <div class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm leading-6 text-slate-200">Debt is not automatically bad, but unmanaged debt gets expensive fast.</div>
+                      <div class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm leading-6 text-slate-200">Interest can work against you just as powerfully as it can work for you.</div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-4">
+                    <div class="overflow-hidden rounded-[1.5rem] border border-white/10 bg-black shadow-glow">
+                      <video class="aspect-video w-full bg-black" controls preload="metadata" src="./videos/0319.mp4"></video>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="methodology" class="relative px-4 py-20 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-7xl">
+            <div class="max-w-3xl">
+              <p class="mb-4 text-sm font-semibold uppercase tracking-[0.28em] text-slateblue">Stock-Picking Methodology</p>
+              <h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">A more disciplined way to think about choosing stocks</h2>
+              <p class="mt-4 text-base leading-7 text-slate-300 sm:text-lg">This section explains a structured way to evaluate stocks more thoughtfully. The goal is not to chase hype, but to move through a repeatable process that looks at the economy, industry strength, company quality, valuation, and risk before making a decision.</p>
+            </div>
+
+            <div class="mt-12 grid gap-5 lg:grid-cols-2">
+              <details class="card-border glass-panel overflow-hidden rounded-[1.75rem]" open>
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-6 py-6"><div><div class="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200"><span class="font-display text-lg font-bold text-white">01</span><span class="h-1.5 w-1.5 rounded-full bg-slateblue"></span>Method</div><h3 class="mt-5 text-2xl font-bold text-white">Start with the bigger picture</h3></div><div class="text-2xl text-white">+</div></summary>
+                <div class="border-t border-white/10 px-6 pb-6 pt-5"><p class="text-sm leading-8 text-slate-300">Before looking at any individual company, I would first look at the overall economy. The goal here is to understand whether the market environment is supportive of stocks in general, or whether it calls for more caution. I would focus on a few major indicators: economic growth, inflation, interest rates, and business activity.</p></div>
+              </details>
+              <details class="card-border glass-panel overflow-hidden rounded-[1.75rem]">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-6 py-6"><div><div class="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200"><span class="font-display text-lg font-bold text-white">02</span><span class="h-1.5 w-1.5 rounded-full bg-slateblue"></span>Method</div><h3 class="mt-5 text-2xl font-bold text-white">Narrow down to strong industries</h3></div><div class="text-2xl text-white">+</div></summary>
+                <div class="border-t border-white/10 px-6 pb-6 pt-5"><p class="text-sm leading-8 text-slate-300">Once I understand the macro environment, I would look for sectors that are positioned to do well in it. I would want industries with steady demand, the ability to raise prices if costs go up, and business models that are not overly dependent on cheap borrowing or perfect economic conditions.</p></div>
+              </details>
+              <details class="card-border glass-panel overflow-hidden rounded-[1.75rem]">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-6 py-6"><div><div class="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200"><span class="font-display text-lg font-bold text-white">03</span><span class="h-1.5 w-1.5 rounded-full bg-slateblue"></span>Method</div><h3 class="mt-5 text-2xl font-bold text-white">Check whether the company is financially strong</h3></div><div class="text-2xl text-white">+</div></summary>
+                <div class="border-t border-white/10 px-6 pb-6 pt-5">
+                  <p class="text-sm leading-8 text-slate-300">After that, I would look at the companyâ€™s financial performance to make sure the business is healthy, not just popular. At this stage, I would want the stock to clear a few specific tests:</p>
+                  <div class="mt-5 grid gap-3">
+                    <div class="rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm leading-7 text-slate-200">Revenue growth: ideally above 5% over time</div>
+                    <div class="rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm leading-7 text-slate-200">Operating margin: at or above the average for its sector</div>
+                    <div class="rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm leading-7 text-slate-200">Free cash flow: positive in at least 4 of the last 5 years</div>
+                    <div class="rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm leading-7 text-slate-200">FCF margin: preferably above 10%</div>
+                    <div class="rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm leading-7 text-slate-200">Net debt / EBITDA: ideally below 2.5x</div>
+                    <div class="rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm leading-7 text-slate-200">Interest coverage: preferably above 5x</div>
+                    <div class="rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm leading-7 text-slate-200">Diluted share count: stable or decreasing over time</div>
+                  </div>
+                </div>
+              </details>
+              <details class="card-border glass-panel overflow-hidden rounded-[1.75rem]">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-6 py-6"><div><div class="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200"><span class="font-display text-lg font-bold text-white">04</span><span class="h-1.5 w-1.5 rounded-full bg-slateblue"></span>Method</div><h3 class="mt-5 text-2xl font-bold text-white">Make sure the stock is not too expensive</h3></div><div class="text-2xl text-white">+</div></summary>
+                <div class="border-t border-white/10 px-6 pb-6 pt-5">
+                  <div class="mt-2 grid gap-3">
+                    <div class="rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm leading-7 text-slate-200">Base-case upside: at least 15%</div>
+                    <div class="rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm leading-7 text-slate-200">Terminal growth rate in a DCF: usually between 2% and 4%</div>
+                    <div class="rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm leading-7 text-slate-200">Discount-rate stress test: valuation should still make sense if the discount rate changes by about 1%</div>
+                    <div class="rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm leading-7 text-slate-200">Use a simple valuation metric like P/E, EV/EBIT, or Price / FCF</div>
+                  </div>
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section id="stock-lab" class="relative px-4 py-20 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-7xl">
+            <div class="max-w-3xl">
+              <p class="mb-4 text-sm font-semibold uppercase tracking-[0.28em] text-slateblue">Interactive Stock Lab</p>
+              <h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Try a stock and see how it holds up under the project framework</h2>
+              <p class="mt-4 text-base leading-7 text-slate-300 sm:text-lg">
+                This tool combines live company data with a few judgment calls you control. The simple section is meant for quick use, and the advanced section is there only if you want a deeper capstone-style analysis.
+              </p>
+            </div>
+
+            <div class="card-border glass-panel mt-12 rounded-[2rem] p-6 sm:p-8">
+              <form id="stockLabForm" class="space-y-8" onsubmit="return false;">
+                <div class="grid gap-4 lg:grid-cols-[1fr_1.2fr_auto]">
+                  <label class="block">
+                    <span class="mb-2 block text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">Stock Ticker</span>
+                    <input
+                      id="tickerInput"
+                      type="text"
+                      value="AAPL"
+                      placeholder="AAPL"
+                      class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-base text-white outline-none transition focus:border-slateblue/60 focus:bg-white/10"
+                    />
+                  </label>
+
+                  <label class="block">
+                    <span class="mb-2 block text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">Live Data Key</span>
+                    <input
+                      id="apiKeyInput"
+                      type="password"
+                      placeholder="Paste your Financial Modeling Prep key"
+                      class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-base text-white outline-none transition focus:border-slateblue/60 focus:bg-white/10"
+                    />
+                  </label>
+
+                  <button
+                    id="stockLabSubmit"
+                    type="button"
+                    onclick="window.runStockLab && window.runStockLab()"
+                    class="mt-[1.9rem] inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3.5 text-sm font-bold text-ink transition hover:scale-[1.02] hover:bg-sand"
+                  >
+                    Score Stock
+                  </button>
+                </div>
+
+                <div class="rounded-[1.5rem] border border-white/10 bg-[#0d1b31] p-5">
+                  <div class="text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">Scoring Mode</div>
+                  <p class="mt-3 text-sm leading-7 text-slate-300">Choose how much of the framework you want to use before scoring.</p>
+                  <div class="mt-4 grid gap-3 md:grid-cols-3">
+                    <button
+                      id="modeFull"
+                      type="button"
+                      onclick="window.setStockLabMode && window.setStockLabMode('full')"
+                      class="stock-mode-button rounded-2xl border border-slateblue/40 bg-slateblue/15 px-4 py-4 text-left transition hover:border-slateblue/60 hover:bg-slateblue/20"
+                    >
+                      <div class="text-sm font-bold text-white">Use Full Framework</div>
+                      <div class="mt-2 text-xs leading-6 text-slate-300">Uses quick inputs, deeper scoring, and live company data.</div>
+                    </button>
+                    <button
+                      id="modeQuick"
+                      type="button"
+                      onclick="window.setStockLabMode && window.setStockLabMode('quick')"
+                      class="stock-mode-button rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-4 text-left transition hover:border-white/20 hover:bg-white/[0.07]"
+                    >
+                      <div class="text-sm font-bold text-white">Ignore Deeper Scoring</div>
+                      <div class="mt-2 text-xs leading-6 text-slate-300">Uses only quick inputs plus live company data.</div>
+                    </button>
+                    <button
+                      id="modeAuto"
+                      type="button"
+                      onclick="window.setStockLabMode && window.setStockLabMode('auto')"
+                      class="stock-mode-button rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-4 text-left transition hover:border-white/20 hover:bg-white/[0.07]"
+                    >
+                      <div class="text-sm font-bold text-white">Ignore All Manual Inputs</div>
+                      <div class="mt-2 text-xs leading-6 text-slate-300">Uses live company data only with built-in defaults.</div>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="grid gap-5 xl:grid-cols-2">
+                  <div class="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5">
+                    <div class="text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">Quick Inputs</div>
+                    <p class="mt-3 text-sm leading-7 text-slate-300">These are the simple judgment calls the tool cannot fully pull from live data. If you are not sure, the default settings are fine.</p>
+                    <div class="mt-4 space-y-4">
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">What is the economy feeling like right now?</span>
+                        <select id="macroGrowth" class="w-full rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm text-white">
+                          <option value="2">Pretty strong</option>
+                          <option value="1">Slower, but still okay</option>
+                          <option value="0">Weak / recession risk</option>
+                        </select>
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">How difficult is the rate / inflation environment?</span>
+                        <select id="macroInflation" class="w-full rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm text-white">
+                          <option value="2">Pretty manageable</option>
+                          <option value="1">Still a little tough</option>
+                          <option value="0">Clearly difficult</option>
+                        </select>
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">How strong is this company's industry?</span>
+                        <select id="macroRates" class="w-full rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm text-white">
+                          <option value="2">Strong industry</option>
+                          <option value="1">Mixed industry</option>
+                          <option value="0">Weak industry</option>
+                        </select>
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">How much do you trust this company's business quality?</span>
+                        <select id="macroPmi" class="w-full rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm text-white">
+                          <option value="2">High quality</option>
+                          <option value="1">Decent but not amazing</option>
+                          <option value="0">Questionable</option>
+                        </select>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <details class="rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-5">
+                  <summary class="cursor-pointer text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">Optional Deeper Scoring</summary>
+                  <p class="mt-3 text-sm leading-7 text-slate-300">Open this if you want to be more detailed. These inputs help the tool act more like your full capstone framework instead of just a quick score.</p>
+
+                  <div class="mt-6 grid gap-5 xl:grid-cols-3">
+                    <div class="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5">
+                      <div class="text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">Industry Strength</div>
+                      <div class="mt-4 space-y-4">
+                        <label class="block">
+                          <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">Is demand for this industry strong?</span>
+                        <input id="sectorDemand" type="range" min="0" max="10" value="7" class="w-full" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">Can this business raise prices without losing people?</span>
+                        <input id="sectorPricing" type="range" min="0" max="10" value="7" class="w-full" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">How much does it depend on the economy being perfect?</span>
+                        <input id="sectorCyclicality" type="range" min="0" max="10" value="5" class="w-full" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">How expensive is it to keep this business running and growing?</span>
+                        <input id="sectorCapex" type="range" min="0" max="10" value="5" class="w-full" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">How much regulation could hurt it?</span>
+                        <input id="sectorRegulation" type="range" min="0" max="10" value="4" class="w-full" />
+                      </label>
+                    </div>
+                    </div>
+
+                    <div class="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5">
+                      <div class="text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">Leadership & Quality</div>
+                      <div class="mt-4 space-y-4">
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">How strong is its advantage over competitors?</span>
+                        <input id="qualMoat" type="range" min="0" max="10" value="7" class="w-full" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">How much do you trust management?</span>
+                        <input id="qualManagement" type="range" min="0" max="10" value="7" class="w-full" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">How clean and trustworthy is governance?</span>
+                        <input id="qualGovernance" type="range" min="0" max="10" value="7" class="w-full" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">Does the company's plan actually make sense?</span>
+                        <input id="qualStrategy" type="range" min="0" max="10" value="7" class="w-full" />
+                      </label>
+                    </div>
+                    </div>
+
+                    <div class="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5">
+                      <div class="text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">Compare It</div>
+                      <div class="mt-4 space-y-4">
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">What is a normal operating margin for similar companies? (%)</span>
+                        <input id="peerOperatingMargin" type="number" value="15" class="w-full rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm text-white" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">What is a normal P/E for similar companies?</span>
+                        <input id="peerPe" type="number" value="25" class="w-full rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm text-white" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">What is a normal EV / EBIT for similar companies?</span>
+                        <input id="peerEvEbit" type="number" value="20" class="w-full rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm text-white" />
+                      </label>
+                    </div>
+                    </div>
+
+                    <div class="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5">
+                      <div class="text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">Value Estimate</div>
+                      <div class="mt-4 space-y-4">
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">If things go normally, how much upside do you think it has? (%)</span>
+                        <input id="dcfBaseUpside" type="number" value="18" class="w-full rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm text-white" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">If things go badly, what happens? (%)</span>
+                        <input id="dcfBearUpside" type="number" value="-8" class="w-full rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm text-white" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">If things go really well, what happens? (%)</span>
+                        <input id="dcfBullUpside" type="number" value="35" class="w-full rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm text-white" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">Long-term growth assumption (%)</span>
+                        <input id="dcfTerminalGrowth" type="number" value="3" class="w-full rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm text-white" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">How sensitive is the valuation to rate changes? (%)</span>
+                        <input id="dcfDiscountStress" type="number" value="1" class="w-full rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm text-white" />
+                      </label>
+                    </div>
+                    </div>
+
+                    <div class="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5">
+                      <div class="text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">Risk & Position Size</div>
+                      <div class="mt-4 space-y-4">
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">How jumpy or risky is this stock?</span>
+                        <input id="riskVolatility" type="range" min="0" max="10" value="5" class="w-full" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">How much outside risk is there? (regulation, politics, etc.)</span>
+                        <input id="riskGeopolitical" type="range" min="0" max="10" value="4" class="w-full" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">How dependent is it on one product, market, or trend?</span>
+                        <input id="riskConcentration" type="range" min="0" max="10" value="4" class="w-full" />
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">If you bought it, what would be a normal starting position? (%)</span>
+                        <input id="portfolioBaseWeight" type="number" value="20" class="w-full rounded-2xl border border-white/10 bg-[#0d1b31] px-4 py-3 text-sm text-white" />
+                      </label>
+                    </div>
+                  </div>
+                  </div>
+                </details>
+              </form>
+
+              <div class="mt-4 rounded-[1.5rem] border border-white/10 bg-[#0d1b31] px-4 py-4 text-sm leading-7 text-slate-300">
+                This uses live company data from Financial Modeling Prep. Your key stays saved only in this browser so you do not have to keep pasting it.
+              </div>
+
+              <div id="stockLabOutput" class="mt-6 rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-5 sm:p-6">
+                <div class="text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">Output</div>
+                <div id="stockLabStatus" class="mt-3 text-sm leading-7 text-slate-300">
+                  Enter a ticker and your live data key, then click <span class="font-semibold text-white">Score Stock</span>.
+                </div>
+                <div id="stockLabResult" class="mt-6"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="reflection" class="relative px-4 py-20 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-6xl">
+            <div class="max-w-3xl">
+              <p class="mb-4 text-sm font-semibold uppercase tracking-[0.28em] text-slateblue">Reflection</p>
+              <h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">What this project taught me about money, teaching, and myself</h2>
+            </div>
+            <div class="card-border glass-panel mt-12 rounded-[2rem] p-6 sm:p-8 lg:p-10">
+              <div class="mb-6 inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-200">Senior Project Reflection</div>
+              <div class="space-y-5 text-base leading-8 text-slate-300">
+                <p>My senior project focused on financial literacy basics for teens. The goal was to educate myself on financial literacy and create a series of short videos that cataloged and explained what I was learning.</p>
+                <p>Over the last couple of months, I learned the basics of financial literacy and strengthened my original belief in the importance of learning about money early. I also learned that knowing something and teaching it clearly are two very different things.</p>
+                <p>At first, I wanted this project to be more focused on investing and personal financial knowledge. I made changes, including adding videos, so it could work as a true senior project. That shift pushed me to learn a range of new skills like recording, being engaging on camera, and editing.</p>
+                <p>While I enjoyed learning about personal finance and exploring the topic myself, I quickly realized that I do not enjoy video creation nearly as much as I enjoy the ideas behind the project. That became one of the biggest challenges. Still, pushing through it taught me a lot about where my interests actually lie, along with my strengths and weaknesses.</p>
+                <p>Even though video editing was difficult, I liked comparing the footage from my first and last videos and seeing how much I improved in front of the camera. Halfway through the project, I also discovered Codex and website creation, which became one of the most interesting parts of shaping how this course is presented.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="journal" class="relative px-4 py-20 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-6xl">
+            <div class="max-w-3xl">
+              <p class="mb-4 text-sm font-semibold uppercase tracking-[0.28em] text-slateblue">Project Journal</p>
+              <h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">One place to open the full journal without crowding the page</h2>
+            </div>
+
+            <details class="card-border glass-panel mt-12 overflow-hidden rounded-[2rem]">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-6 sm:px-8">
+                <div>
+                  <div class="text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">Click To Open</div>
+                  <div class="mt-3 font-display text-2xl font-bold text-white sm:text-3xl">Project Journal</div>
+                  <div class="mt-3 max-w-2xl text-sm leading-7 text-slate-300">Progress notes, research days, filming updates, and how the project changed over time.</div>
+                </div>
+                <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 text-3xl text-white">+</div>
+              </summary>
+              <div class="border-t border-white/10 px-6 pb-6 pt-6 sm:px-8 sm:pb-8">
+                <div class="space-y-4 rounded-[1.5rem] border border-white/10 bg-[#0d1b31] p-5 sm:p-6">
+                  <details class="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-5">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">December 9, 2025</summary>
+                    <p class="mt-3 text-base leading-8 text-slate-300">Met with Dr. Babinet, found a mentor, and discussed plans for interviews. I committed to coming up with questions next.</p>
+                  </details>
+                  <details class="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-5">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">December 16, 2025</summary>
+                    <p class="mt-3 text-base leading-8 text-slate-300">Completed a draft of my interview questions and drafted an email to my mentor.</p>
+                  </details>
+                  <details class="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-5">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">December 18, 2025</summary>
+                    <p class="mt-3 text-base leading-8 text-slate-300">Set up, prepared for, and met with my mentor. I also set up future communication, expectations, and ideas for the project.</p>
+                  </details>
+                  <details class="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-5">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">December 26, 2025</summary>
+                    <p class="mt-3 text-base leading-8 text-slate-300">I was sick, but I still did baseline research on financial literacy frameworks.</p>
+                  </details>
+                  <details class="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-5">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">February 10, 2026</summary>
+                    <p class="mt-3 text-base leading-8 text-slate-300">I took a slight detour to build a stock evaluation framework. If I can implement that as a checklist in the senior project, I can still pursue my interest in stock picking and investing.</p>
+                  </details>
+                  <details class="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-5">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">February 17, 2026</summary>
+                    <p class="mt-3 text-base leading-8 text-slate-300">Worked on my financial literacy project by researching money basics, budgeting, banking, and inflation to improve the Video 1 script. I brainstormed ways to make it more interesting, like adding interactive parts or recording outside. I also played around with CapCut and OBS, made a couple of demo videos, sorted out a CapCut issue after a hiccup, and got more organized for the next stage of the project.</p>
+                  </details>
+                  <details class="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-5">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">February 25, 2026</summary>
+                    <p class="mt-3 text-base leading-8 text-slate-300">I got back to the stock framework and started thinking that I could lowkey make it into an automated tool once I fully create the framework. Honestly, I find this a lot more interesting and engaging than the videos.</p>
+                  </details>
+                  <details class="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-5">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">March 2, 2026</summary>
+                    <p class="mt-3 text-base leading-8 text-slate-300">Worked on Video 1 for the financial literacy series. I finalized and recorded all sections of the foundations video, went deeper into banking, credit, and inflation so the content felt more solid and less surface-level, and adjusted talking points while recording to make them sound more natural. I also added clearer explanations for overdraft, interest math, and purchasing power, then saved and organized all footage so editing would be easier.</p>
+                  </details>
+                  <details class="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-5">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">March 4, 2026</summary>
+                    <p class="mt-3 text-base leading-8 text-slate-300">Recorded and edited Video 2 on credit, debt, and how the credit system works. I broke the recording into sections to keep things more structured and easier to edit, tightened explanations so concepts like interest, utilization, and credit scores came across more clearly, and added slides and overlays to make the video more engaging. I also spent time in CapCut cutting out rambling parts and improving pacing, which made the video feel cleaner and more intentional than the draft.</p>
+                  </details>
+                  <details class="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-5">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">March 16, 2026</summary>
+                    <p class="mt-3 text-base leading-8 text-slate-300">Researched content for Video 2 on credit, debt, and how the credit system actually works. I focused on understanding interest, credit scores, and how banks make money so I could explain it clearly, watched a couple faster-paced videos, and took notes on key concepts like utilization and minimum payments. I also started building the website for the project so it would feel more like a real course instead of just separate videos, and made progress on the structure, layout, and design.</p>
+                  </details>
+                  <details class="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-5">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">March 20, 2026</summary>
+                    <p class="mt-3 text-base leading-8 text-slate-300">Met with Sami again, spent time reviewing what I already had, and talked through the general direction of the project. Since I do not enjoy video editing at all, we looked at other directions I could take while still keeping it within the scope of the project.</p>
+                  </details>
+                  <details class="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-5">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">April 1, 2026</summary>
+                    <p class="mt-3 text-base leading-8 text-slate-300">This has been really boring, and I have been spending a lot of time editing and recording even though I do not enjoy it. Still, it is teaching me skills that may be useful long term, and I especially feel like I am getting better in front of a camera.</p>
+                  </details>
+                  <details class="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-5">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">April 6, 2026</summary>
+                    <p class="mt-3 text-base leading-8 text-slate-300">I was about to be out of town, but I had pretty much edited and recorded all but one video, and everything was looking good. I also began trying to create an AI day trading app with Codex.</p>
+                  </details>
+                  <details class="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-5">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.24em] text-slateblue">April 15, 2026</summary>
+                    <p class="mt-3 text-base leading-8 text-slate-300">The day trading app was not working out. It was probably too complicated for me and for early-stage Codex, so I went back to the stock-picking tool. I also recorded the last video and wore a suit for it.</p>
+                  </details>
+                </div>
+              </div>
+            </details>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t border-white/10 px-4 py-10 sm:px-6 lg:px-8">
+        <div class="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <div class="font-display text-2xl font-bold text-white">Money Moves</div>
+            <div class="mt-2 text-sm text-slate-400">Created by Your Name | Senior Project | Your School | 2026</div>
+          </div>
+          <a
+            href="#home"
+            class="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
+          >
+            Back to top
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      var stockLabBaseUrl = "https://financialmodelingprep.com/stable";
+      var stockLabStorageKey = "money-moves-fmp-key";
+      var stockLabModeKey = "money-moves-stock-mode";
+      var stockLabMode = "full";
+
+      function stockLabEls() {
+        return {
+          ticker: document.getElementById("tickerInput"),
+          apiKey: document.getElementById("apiKeyInput"),
+          result: document.getElementById("stockLabResult"),
+          status: document.getElementById("stockLabStatus"),
+          button: document.getElementById("stockLabSubmit")
+        };
+      }
+
+      function stockLabSetStatus(message, isError) {
+        var els = stockLabEls();
+        if (!els.status) return;
+        els.status.className = isError ? "mt-3 text-sm leading-7 text-rose-100" : "mt-3 text-sm leading-7 text-slate-300";
+        els.status.textContent = message;
+      }
+
+      function stockLabSetResult(html) {
+        var els = stockLabEls();
+        if (els.result) els.result.innerHTML = html || "";
+      }
+
+      function stockLabNum(value) {
+        var n = Number(value);
+        return isFinite(n) ? n : null;
+      }
+
+      function stockLabGet(obj, keys) {
+        if (!obj) return null;
+        for (var i = 0; i < keys.length; i += 1) {
+          var n = stockLabNum(obj[keys[i]]);
+          if (n !== null) return n;
+        }
+        return null;
+      }
+
+      function stockLabPercent(value) {
+        return value === null ? "N/A" : (value * 100).toFixed(1) + "%";
+      }
+
+      function stockLabMultiple(value) {
+        return value === null ? "N/A" : value.toFixed(1) + "x";
+      }
+
+      function stockLabCurrency(value) {
+        if (value === null) return "N/A";
+        return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: value >= 100 ? 0 : 2 }).format(value);
+      }
+
+      function stockLabCompact(value) {
+        if (value === null) return "N/A";
+        return new Intl.NumberFormat("en-US", { notation: "compact", maximumFractionDigits: 1 }).format(value);
+      }
+
+      function stockLabVal(id, fallback) {
+        var el = document.getElementById(id);
+        if (!el) return fallback;
+        if (el.type === "range" || el.type === "number") {
+          var n = Number(el.value);
+          return isFinite(n) ? n : fallback;
+        }
+        if (el.tagName === "SELECT") {
+          var s = Number(el.value);
+          return isFinite(s) ? s : fallback;
+        }
+        return el.value || fallback;
+      }
+
+      function stockLabModeMeta(mode) {
+        if (mode === "auto") {
+          return {
+            label: "Live Data Only",
+            description: "Used live company data only with built-in defaults."
+          };
+        }
+        if (mode === "quick") {
+          return {
+            label: "Quick Inputs Only",
+            description: "Ignored deeper scoring and used only quick inputs plus live company data."
+          };
+        }
+        return {
+          label: "Full Framework",
+          description: "Used quick inputs, deeper scoring, and live company data together."
+        };
+      }
+
+      function setStockLabMode(mode) {
+        stockLabMode = mode === "auto" || mode === "quick" ? mode : "full";
+        try {
+          window.localStorage.setItem(stockLabModeKey, stockLabMode);
+        } catch (error) {}
+
+        var modes = [
+          { id: "modeFull", value: "full" },
+          { id: "modeQuick", value: "quick" },
+          { id: "modeAuto", value: "auto" }
+        ];
+
+        for (var i = 0; i < modes.length; i += 1) {
+          var button = document.getElementById(modes[i].id);
+          if (!button) continue;
+          if (modes[i].value === stockLabMode) {
+            button.className = "stock-mode-button rounded-2xl border border-slateblue/40 bg-slateblue/15 px-4 py-4 text-left transition hover:border-slateblue/60 hover:bg-slateblue/20";
+          } else {
+            button.className = "stock-mode-button rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-4 text-left transition hover:border-white/20 hover:bg-white/[0.07]";
+          }
+        }
+      }
+
+      function stockLabFetch(path, apiKey) {
+        var separator = path.indexOf("?") !== -1 ? "&" : "?";
+        return fetch(stockLabBaseUrl + path + separator + "apikey=" + encodeURIComponent(apiKey)).then(function (response) {
+          return response.json().then(function (data) {
+            if (!response.ok) throw new Error("Unable to load stock data right now.");
+            if (data && (data.Error || data["Error Message"])) throw new Error(data.Error || data["Error Message"]);
+            return data;
+          });
+        });
+      }
+
+      function stockLabRender(data) {
+        var quote = data.quote;
+        var profile = data.profile;
+        var income = data.income;
+        var balance = data.balance;
+        var cashflow = data.cashflow;
+        var mode = stockLabMode;
+        var modeMeta = stockLabModeMeta(mode);
+        var useQuickInputs = mode !== "auto";
+        var useDeepInputs = mode === "full";
+
+        var macroGrowth = useQuickInputs ? stockLabVal("macroGrowth", 1) : 1;
+        var macroInflation = useQuickInputs ? stockLabVal("macroInflation", 1) : 1;
+        var macroRates = useQuickInputs ? stockLabVal("macroRates", 1) : 1;
+        var macroPmi = useQuickInputs ? stockLabVal("macroPmi", 1) : 1;
+
+        var sectorDemand = useDeepInputs ? stockLabVal("sectorDemand", 7) : 7;
+        var sectorPricing = useDeepInputs ? stockLabVal("sectorPricing", 7) : 7;
+        var sectorCyclicality = useDeepInputs ? stockLabVal("sectorCyclicality", 5) : 5;
+        var sectorCapex = useDeepInputs ? stockLabVal("sectorCapex", 5) : 5;
+        var sectorRegulation = useDeepInputs ? stockLabVal("sectorRegulation", 4) : 4;
+
+        var qualMoat = useDeepInputs ? stockLabVal("qualMoat", 7) : 7;
+        var qualManagement = useDeepInputs ? stockLabVal("qualManagement", 7) : 7;
+        var qualGovernance = useDeepInputs ? stockLabVal("qualGovernance", 7) : 7;
+        var qualStrategy = useDeepInputs ? stockLabVal("qualStrategy", 7) : 7;
+
+        var peerOperatingMargin = (useDeepInputs ? stockLabVal("peerOperatingMargin", 15) : 15) / 100;
+        var peerPe = useDeepInputs ? stockLabVal("peerPe", 25) : 25;
+        var peerEvEbit = useDeepInputs ? stockLabVal("peerEvEbit", 20) : 20;
+
+        var dcfBaseUpside = useDeepInputs ? stockLabVal("dcfBaseUpside", 18) : 18;
+        var dcfBearUpside = useDeepInputs ? stockLabVal("dcfBearUpside", -8) : -8;
+        var dcfBullUpside = useDeepInputs ? stockLabVal("dcfBullUpside", 35) : 35;
+        var dcfTerminalGrowth = useDeepInputs ? stockLabVal("dcfTerminalGrowth", 3) : 3;
+        var dcfDiscountStress = useDeepInputs ? stockLabVal("dcfDiscountStress", 1) : 1;
+
+        var riskVolatility = useDeepInputs ? stockLabVal("riskVolatility", 5) : 5;
+        var riskGeopolitical = useDeepInputs ? stockLabVal("riskGeopolitical", 4) : 4;
+        var riskConcentration = useDeepInputs ? stockLabVal("riskConcentration", 4) : 4;
+        var baseWeight = useDeepInputs ? stockLabVal("portfolioBaseWeight", 20) : 20;
+
+        var latestIncome = income[0] || null;
+        var previousIncome = income[1] || null;
+        var latestBalance = balance[0] || null;
+        var latestCashflow = cashflow[0] || null;
+
+        var revenue = stockLabGet(latestIncome, ["revenue"]);
+        var prevRevenue = stockLabGet(previousIncome, ["revenue"]);
+        var revenueGrowth = revenue !== null && prevRevenue ? (revenue - prevRevenue) / prevRevenue : null;
+        var operatingIncome = stockLabGet(latestIncome, ["operatingIncome", "incomeFromOperations"]);
+        var operatingMargin = revenue ? operatingIncome / revenue : null;
+        var freeCashFlow = stockLabGet(latestCashflow, ["freeCashFlow"]);
+        var fcfMargin = revenue ? freeCashFlow / revenue : null;
+        var totalDebt = stockLabGet(latestBalance, ["totalDebt", "netDebt"]);
+        var cash = stockLabGet(latestBalance, ["cashAndShortTermInvestments", "cashAndCashEquivalents", "cashAndCashEquivalentsAtCarryingValue"]);
+        var ebitda = stockLabGet(latestIncome, ["ebitda"]);
+        var netDebt = totalDebt !== null ? totalDebt - (cash || 0) : null;
+        var netDebtToEbitda = netDebt !== null && ebitda ? netDebt / ebitda : null;
+        var price = stockLabGet(quote, ["price"]);
+        var eps = stockLabGet(latestIncome, ["epsdiluted", "epsDiluted", "eps"]);
+        var pe = price !== null && eps ? price / eps : null;
+        var marketCap = stockLabGet(quote, ["marketCap"]);
+        if (marketCap === null) marketCap = stockLabGet(profile, ["mktCap", "marketCap"]);
+        var enterpriseValue = marketCap !== null && netDebt !== null ? marketCap + netDebt : null;
+        var evToEbit = enterpriseValue !== null && operatingIncome !== null && operatingIncome > 0 ? enterpriseValue / operatingIncome : null;
+        var positiveFcfYears = cashflow.slice(0, 5).map(function (report) {
+          return stockLabGet(report, ["freeCashFlow"]);
+        }).filter(function (value) {
+          return value !== null && value > 0;
+        }).length;
+        var sharesSeries = income.slice(0, 5).map(function (report) {
+          return stockLabGet(report, ["weightedAverageShsOutDil", "weightedAverageShsOut"]);
+        }).filter(function (value) {
+          return value !== null;
+        });
+        var dilutedTrend = sharesSeries.length >= 2 ? (sharesSeries[0] - sharesSeries[sharesSeries.length - 1]) / sharesSeries[sharesSeries.length - 1] : null;
+
+        var macroScore = macroGrowth + macroInflation + macroRates + macroPmi;
+        var macroLabel = macroScore >= 7 ? "Supportive / expansionary" : macroScore >= 4 ? "Slow growth + still restrictive rates" : "Weak / caution-heavy";
+
+        var sectorRaw = sectorDemand + sectorPricing + (10 - sectorCyclicality) + (10 - sectorCapex) + (10 - sectorRegulation);
+        var sectorScore = Math.round((sectorRaw / 50) * 100);
+        var sectorLabel = sectorScore >= 70 ? "Strong sector fit" : sectorScore >= 55 ? "Mixed sector fit" : "Weak sector fit";
+
+        var qualitativeRaw = qualMoat + qualManagement + qualGovernance + qualStrategy;
+        var qualitativeScore = Math.round((qualitativeRaw / 40) * 100);
+        var qualitativeLabel = qualitativeScore >= 70 ? "Quality gate passed" : qualitativeScore >= 55 ? "Needs deeper review" : "Quality gate failed";
+
+        var checks = [
+          { label: "Revenue growth above 5%", value: stockLabPercent(revenueGrowth), pass: revenueGrowth !== null && revenueGrowth > 0.05 },
+          { label: "Operating margin beats similar companies", value: stockLabPercent(operatingMargin), pass: operatingMargin !== null && operatingMargin >= peerOperatingMargin },
+          { label: "Positive free cash flow in at least 4 of the last 5 years", value: positiveFcfYears + "/5 years", pass: positiveFcfYears >= 4 },
+          { label: "Free cash flow margin above 10%", value: stockLabPercent(fcfMargin), pass: fcfMargin !== null && fcfMargin > 0.10 },
+          { label: "Debt stays below 2.5x EBITDA", value: netDebt !== null && netDebt < 0 ? "Net cash" : stockLabMultiple(netDebtToEbitda), pass: netDebt !== null && (netDebt < 0 || (netDebtToEbitda !== null && netDebtToEbitda < 2.5)) },
+          { label: "P/E is not above similar companies", value: stockLabMultiple(pe), pass: pe !== null && pe <= peerPe },
+          { label: "EV / EBIT is not above similar companies", value: stockLabMultiple(evToEbit), pass: evToEbit !== null && evToEbit <= peerEvEbit },
+          { label: "Share count stays mostly stable", value: dilutedTrend === null ? "N/A" : stockLabPercent(dilutedTrend), pass: dilutedTrend !== null && dilutedTrend <= 0.02 },
+          { label: "Base case upside is at least 15%", value: dcfBaseUpside.toFixed(1) + "%", pass: dcfBaseUpside >= 15 },
+          { label: "Long-term growth stays between 2% and 4%", value: dcfTerminalGrowth.toFixed(1) + "%", pass: dcfTerminalGrowth >= 2 && dcfTerminalGrowth <= 4 },
+          { label: "Valuation still works if rates move about 1%", value: dcfDiscountStress.toFixed(1) + "%", pass: dcfDiscountStress <= 1.5 }
+        ];
+
+        var passed = 0;
+        for (var i = 0; i < checks.length; i += 1) {
+          if (checks[i].pass) passed += 1;
+        }
+        var financialScore = Math.round((passed / checks.length) * 100);
+        var totalScore = Math.round(financialScore * 0.4 + macroScore / 8 * 100 * 0.15 + sectorScore * 0.15 + qualitativeScore * 0.2 + Math.max(0, 100 - ((riskVolatility + riskGeopolitical + riskConcentration) / 30) * 100) * 0.1);
+        var recommendation = totalScore >= 80 && qualitativeScore >= 70 && sectorScore >= 70 ? "Approve" : totalScore >= 60 ? "Watchlist" : "Reject";
+        var riskPenalty = Math.round(((riskVolatility + riskGeopolitical + riskConcentration) / 30) * 100);
+        var suggestedWeight = Math.max(5, Math.min(baseWeight, Math.round(baseWeight * (totalScore / 100) * ((100 - riskPenalty) / 100))));
+        var monitoringTriggers = [
+          "Re-underwrite if revenue growth, margins, or free cash flow break the thesis for two reporting periods.",
+          "Review immediately if governance, regulation, litigation, or management changes materially worsen the risk profile.",
+          "Revisit the valuation if upside compresses sharply or if the stock becomes an outsized portfolio weight."
+        ];
+
+        var cards = "";
+        for (var j = 0; j < checks.length; j += 1) {
+          var badgeClass = checks[j].pass ? "bg-mint/15 text-mint" : "bg-coral/15 text-coral";
+          var badgeText = checks[j].pass ? "Pass" : "Fail";
+          cards += '<div class="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5">' +
+            '<div class="flex items-start justify-between gap-3">' +
+            '<div class="text-sm font-semibold leading-6 text-white">' + checks[j].label + '</div>' +
+            '<div class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] ' + badgeClass + '">' + badgeText + '</div>' +
+            '</div>' +
+            '<div class="mt-4 text-2xl font-bold text-white">' + checks[j].value + '</div>' +
+            '</div>';
+        }
+
+        var triggerHtml = "";
+        for (var k = 0; k < monitoringTriggers.length; k += 1) {
+          triggerHtml += '<div class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm leading-7 text-slate-200">' + monitoringTriggers[k] + '</div>';
+        }
+
+        stockLabSetResult(
+          '<div class="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">' +
+          '<div class="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6">' +
+          '<div class="text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">Final Score</div>' +
+          '<div class="mt-4 font-display text-6xl font-bold text-white">' + totalScore + '</div>' +
+          '<div class="mt-3 text-lg font-semibold text-white">' + recommendation + '</div>' +
+          '<div class="mt-3 inline-flex rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-slate-200">' + modeMeta.label + '</div>' +
+          '<div class="mt-3 text-sm leading-7 text-slate-300">Suggested starting position: ' + suggestedWeight + '%</div>' +
+          '<div class="mt-2 text-sm leading-7 text-slate-400">' + modeMeta.description + '</div>' +
+          '</div>' +
+          '<div class="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6">' +
+          '<div class="grid gap-4 sm:grid-cols-2">' +
+          '<div><div class="text-xs font-semibold uppercase tracking-[0.2em] text-slateblue">Company</div><div class="mt-2 text-xl font-bold text-white">' + (((profile && (profile.companyName || profile.name)) || (quote && quote.name) || "Unknown company")) + '</div></div>' +
+          '<div><div class="text-xs font-semibold uppercase tracking-[0.2em] text-slateblue">Current Price</div><div class="mt-2 text-xl font-bold text-white">' + stockLabCurrency(price) + '</div></div>' +
+          '<div><div class="text-xs font-semibold uppercase tracking-[0.2em] text-slateblue">Sector</div><div class="mt-2 text-base text-slate-200">' + (((profile && profile.sector) || "Unknown")) + '</div></div>' +
+          '<div><div class="text-xs font-semibold uppercase tracking-[0.2em] text-slateblue">Industry</div><div class="mt-2 text-base text-slate-200">' + (((profile && profile.industry) || "N/A")) + '</div></div>' +
+          '<div><div class="text-xs font-semibold uppercase tracking-[0.2em] text-slateblue">Market Cap</div><div class="mt-2 text-base text-slate-200">' + stockLabCompact(marketCap) + '</div></div>' +
+          '<div><div class="text-xs font-semibold uppercase tracking-[0.2em] text-slateblue">Big Picture</div><div class="mt-2 text-base text-slate-200">' + macroLabel + '</div></div>' +
+          '</div></div></div>' +
+          '<div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">' +
+          '<div class="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5"><div class="text-sm font-semibold uppercase tracking-[0.18em] text-slateblue">Macro</div><div class="mt-4 text-4xl font-bold text-white">' + Math.round((macroScore / 8) * 100) + '</div><div class="mt-3 text-sm text-slate-300">' + macroLabel + '</div></div>' +
+          '<div class="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5"><div class="text-sm font-semibold uppercase tracking-[0.18em] text-slateblue">Sector</div><div class="mt-4 text-4xl font-bold text-white">' + sectorScore + '</div><div class="mt-3 text-sm text-slate-300">' + sectorLabel + '</div></div>' +
+          '<div class="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5"><div class="text-sm font-semibold uppercase tracking-[0.18em] text-slateblue">Quality</div><div class="mt-4 text-4xl font-bold text-white">' + qualitativeScore + '</div><div class="mt-3 text-sm text-slate-300">' + qualitativeLabel + '</div></div>' +
+          '<div class="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5"><div class="text-sm font-semibold uppercase tracking-[0.18em] text-slateblue">Numbers</div><div class="mt-4 text-4xl font-bold text-white">' + financialScore + '</div><div class="mt-3 text-sm text-slate-300">Live data checks</div></div>' +
+          '</div>' +
+          '<div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">' + cards + '</div>' +
+          '<div class="grid gap-5 lg:grid-cols-2">' +
+          '<div class="rounded-[1.75rem] border border-white/10 bg-[#0d1b31] p-6"><div class="text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">Your Value Scenarios</div><div class="mt-4 grid gap-3"><div class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm leading-7 text-slate-200">Bear case: ' + dcfBearUpside.toFixed(1) + '%</div><div class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm leading-7 text-slate-200">Base case: ' + dcfBaseUpside.toFixed(1) + '%</div><div class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm leading-7 text-slate-200">Bull case: ' + dcfBullUpside.toFixed(1) + '%</div><div class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm leading-7 text-slate-200">Terminal growth: ' + dcfTerminalGrowth.toFixed(1) + '%</div></div></div>' +
+          '<div class="rounded-[1.75rem] border border-white/10 bg-[#0d1b31] p-6"><div class="text-sm font-semibold uppercase tracking-[0.2em] text-slateblue">What Would Make You Recheck It?</div><div class="mt-4 grid gap-3">' + triggerHtml + '</div></div>' +
+          '</div>'
+        );
+        stockLabSetStatus("Score loaded in " + modeMeta.label + " mode. " + modeMeta.description, false);
+      }
+
+      function runStockLab() {
+        var els = stockLabEls();
+        if (!els.ticker || !els.apiKey || !els.button) return;
+
+        var ticker = (els.ticker.value || "").trim().toUpperCase();
+        var apiKey = (els.apiKey.value || "").trim();
+
+        stockLabSetResult("");
+
+        if (!ticker) {
+          stockLabSetStatus("Error: Enter a stock ticker first.", true);
+          return;
+        }
+
+        if (!apiKey) {
+          stockLabSetStatus("Error: Enter your live data key first.", true);
+          return;
+        }
+
+        try {
+          window.localStorage.setItem(stockLabStorageKey, apiKey);
+        } catch (error) {}
+
+        els.button.textContent = "Scoring...";
+        els.button.disabled = true;
+        stockLabSetStatus("Loading live company data...", false);
+
+        Promise.all([
+          stockLabFetch("/quote?symbol=" + ticker, apiKey),
+          stockLabFetch("/profile?symbol=" + ticker, apiKey),
+          stockLabFetch("/income-statement?symbol=" + ticker + "&limit=5&period=annual", apiKey),
+          stockLabFetch("/balance-sheet-statement?symbol=" + ticker + "&limit=5&period=annual", apiKey),
+          stockLabFetch("/cash-flow-statement?symbol=" + ticker + "&limit=5&period=annual", apiKey)
+        ]).then(function (responses) {
+          var quote = Array.isArray(responses[0]) ? responses[0][0] : null;
+          var profile = Array.isArray(responses[1]) ? responses[1][0] : null;
+          var income = Array.isArray(responses[2]) ? responses[2] : [];
+          var balance = Array.isArray(responses[3]) ? responses[3] : [];
+          var cashflow = Array.isArray(responses[4]) ? responses[4] : [];
+
+          if (!quote || !profile || !income.length || !balance.length || !cashflow.length) {
+            throw new Error("There was not enough live data available for that ticker.");
+          }
+
+          stockLabRender({ quote: quote, profile: profile, income: income, balance: balance, cashflow: cashflow });
+        }).catch(function (error) {
+          stockLabSetStatus("Error: " + (error.message || "Something went wrong while scoring that ticker."), true);
+          stockLabSetResult("");
+        }).finally(function () {
+          els.button.textContent = "Score Stock";
+          els.button.disabled = false;
+        });
+      }
+
+      window.runStockLab = runStockLab;
+      window.setStockLabMode = setStockLabMode;
+
+      (function () {
+        var els = stockLabEls();
+        if (!els.status) return;
+        try {
+          if (els.apiKey) els.apiKey.value = window.localStorage.getItem(stockLabStorageKey) || "";
+          stockLabMode = window.localStorage.getItem(stockLabModeKey) || "full";
+        } catch (error) {}
+        setStockLabMode(stockLabMode);
+        stockLabSetStatus("Tool ready. Enter a ticker and your live data key, then click Score Stock.", false);
+      })();
+    </script>
+  </body>
+</html>
+
+
+

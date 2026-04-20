@@ -1,0 +1,42 @@
+GITHUB SETUP FOR THIS PROJECT
+
+Important:
+- GitHub will not accept your current local video files in a normal repo.
+- Current video sizes are much too large for GitHub:
+  - 0302-1.mp4 is about 1.04 GB
+  - 0319.mp4 is about 505 MB
+- Normal GitHub file limit: 100 MB per file
+
+Best option for GitHub Pages:
+1. Upload the website files only:
+   - index.html
+   - styles.css
+   - README.txt
+   - GITHUB-SETUP.txt
+
+2. Do NOT upload:
+   - videos folder (unless you replace the files with much smaller versions under 100 MB each)
+   - start-site.bat
+   - start-site.vbs
+   - app.js if you are only using the static site
+
+3. For videos, use one of these:
+   - Upload them to YouTube as unlisted videos and embed them
+   - Compress them heavily and keep each file under 100 MB
+   - Host them somewhere else and link/embed them from there
+
+Recommended path:
+- Put the site itself on GitHub Pages
+- Put the videos on YouTube as unlisted
+- Then swap the local video paths in index.html for embeds or hosted video URLs
+
+If you want to upload the site through the GitHub website without git installed:
+1. Go to github.com
+2. Create a new repository
+3. Click "uploading an existing file"
+4. Drag in the website files
+5. Commit the upload
+6. Turn on GitHub Pages in the repo settings
+
+If you want, the next step is:
+- convert the video section so it works with GitHub Pages using hosted videos instead of local files
